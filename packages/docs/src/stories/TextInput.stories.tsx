@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Box, Text, TextInput, type TextInputProps } from '@ignite-ui/react'
 
 export default {
-  title: 'Typography/Text Input',
+  title: 'Form/Text Input',
   component: TextInput,
   args: {},
   decorators: [
