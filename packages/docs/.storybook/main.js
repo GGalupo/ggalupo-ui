@@ -18,7 +18,7 @@ module.exports = {
     },
     "viteFinal": (config, { configType }) => {
         if (configType === 'PRODUCTION') {
-            config.base = '/ignite-design-system'
+            config.base = '/ggalupo-ui'
         }
 
         return config
