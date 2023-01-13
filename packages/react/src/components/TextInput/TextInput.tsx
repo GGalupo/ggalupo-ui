@@ -1,4 +1,9 @@
-import { type ComponentProps } from 'react'
+import {
+  type ComponentProps,
+  type ElementRef,
+  forwardRef,
+  type ForwardRefRenderFunction,
+} from 'react'
 import { Input, Prefix, TextInputContainer } from './styles'
 
 export interface TextInputProps
@@ -7,7 +12,10 @@ export interface TextInputProps
   size?: ComponentProps<typeof TextInputContainer>['size']
 }
 
-export const TextInput = ({ prefix, size, ...props }: TextInputProps) => {
+export const TextInputBase: ForwardRefRenderFunction<
+  ElementRef<typeof Input>,
+  TextInputProps
+> = ({ prefix, size, ...props }) => {
   return (
     <TextInputContainer size={size}>
       {!!prefix && <Prefix>{prefix}</Prefix>}
@@ -16,4 +24,6 @@ export const TextInput = ({ prefix, size, ...props }: TextInputProps) => {
   )
 }
 
-TextInput.displayName = 'TextInput'
+TextInputBase.displayName = 'TextInput'
+
+export const TextInput = forwardRef(TextInputBase)
