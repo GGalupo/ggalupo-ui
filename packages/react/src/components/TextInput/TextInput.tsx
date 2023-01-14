@@ -15,11 +15,11 @@ export interface TextInputProps
 export const TextInputBase: ForwardRefRenderFunction<
   ElementRef<typeof Input>,
   TextInputProps
-> = ({ prefix, size, ...props }) => {
+> = ({ prefix, size, ...props }, ref) => {
   return (
     <TextInputContainer size={size}>
       {!!prefix && <Prefix>{prefix}</Prefix>}
-      <Input {...props} />
+      <Input ref={ref} {...props} />
     </TextInputContainer>
   )
 }
