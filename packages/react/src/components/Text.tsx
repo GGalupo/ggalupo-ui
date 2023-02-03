@@ -6,7 +6,6 @@ export const Text = styled('p', {
   fontFamily: '$default',
   lineHeight: '$base',
   margin: 0,
-  color: '$gray100',
   variants: {
     size: {
       xxs: { fontSize: '$xxs' },
@@ -23,9 +22,17 @@ export const Text = styled('p', {
       '8xl': { fontSize: '$8xl' },
       '9xl': { fontSize: '$9xl' },
     },
+    level: {
+      default: { color: '$gray100' },
+      danger: { color: '$danger400' },
+      info: { color: '$sky400' },
+      warning: { color: '$sun400' },
+      success: { color: '$grass500' },
+    },
   },
   defaultVariants: {
     size: 'md',
+    level: 'default',
   },
 })
 
