@@ -6,7 +6,6 @@ export const Heading = styled('h2', {
   fontFamily: '$default',
   lineHeight: '$shorter',
   margin: 0,
-  color: '$gray100',
   variants: {
     size: {
       sm: { fontSize: '$xl' },
@@ -18,9 +17,17 @@ export const Heading = styled('h2', {
       '4xl': { fontSize: '$8xl' },
       '5xl': { fontSize: '$9xl' },
     },
+    level: {
+      default: { color: '$gray100' },
+      danger: { color: '$danger400' },
+      info: { color: '$sky400' },
+      warning: { color: '$sun400' },
+      success: { color: '$grass500' },
+    },
   },
   defaultVariants: {
     size: 'md',
+    level: 'default',
   },
 })
 

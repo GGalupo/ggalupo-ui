@@ -48,4 +48,15 @@ export const colors = {
   danger700: '#b91c1c',
   danger800: '#991b1b',
   danger900: '#7f1d1d',
+
+  sun50: '#fefce8',
+  sun100: '#fef9c3',
+  sun200: '#fef08a',
+  sun300: '#fde047',
+  sun400: '#facc15',
+  sun500: '#eab308',
+  sun600: '#ca8a04',
+  sun700: '#a16207',
+  sun800: '#854d0e',
+  sun900: '#713f12',
 } as const

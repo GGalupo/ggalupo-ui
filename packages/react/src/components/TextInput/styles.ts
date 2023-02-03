@@ -21,7 +21,7 @@ export const TextInputContainer = styled('div', {
   },
 
   '&:has(input:focus)': {
-    borderColor: '$ignite300',
+    borderColor: '$grass300',
   },
 
   '&:has(input:disabled)': {

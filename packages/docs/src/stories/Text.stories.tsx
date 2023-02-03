@@ -6,6 +6,7 @@ export default {
   component: Text,
   args: {
     size: 'md',
+    level: 'default',
     children:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto nisi assumenda asperiores accusantium temporibus, itaque voluptas eaque velit ipsa, explicabo tempora, pariatur voluptates fugit saepe fuga. Quos blanditiis odio laboriosam!',
   },
@@ -26,6 +27,12 @@ export default {
         '8xl',
         '9xl',
       ],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    level: {
+      options: ['default', 'danger', 'info', 'warning', 'success'],
       control: {
         type: 'inline-radio',
       },
