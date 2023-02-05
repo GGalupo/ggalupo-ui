@@ -6,8 +6,6 @@ npm run changeset
 
 Add summary
 
-**Change .changeset random generated file from major to minor/patch if necessary**
-
 ```
 npm run version-packages
 ```
