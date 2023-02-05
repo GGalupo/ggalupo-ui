@@ -1,5 +1,11 @@
 # @ggalupo-ui/react
 
+## 1.1.2
+
+### Patch Changes
+
+- Add size to Avatar component
+
 ## 1.1.1
 
 ### Patch Changes

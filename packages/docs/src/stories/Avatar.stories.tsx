@@ -5,6 +5,7 @@ export default {
   title: 'Data display/Avatar',
   component: Avatar,
   args: {
+    size: 'md',
     src: 'https://github.com/GGalupo.png',
     alt: 'Gustavo Galupo',
   },
@@ -12,6 +13,12 @@ export default {
     src: {
       control: {
         type: 'text',
+      },
+    },
+    size: {
+      options: ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'],
+      control: {
+        type: 'inline-radio',
       },
     },
   },
