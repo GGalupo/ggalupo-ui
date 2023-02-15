@@ -16,7 +16,6 @@ export const ModalOverlay = styled(Dialog.Overlay, {
   backgroundColor: '$gray900',
   position: 'fixed',
   inset: 0,
-  opacity: 0.85,
   animation: `${overlayShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
 })
 
