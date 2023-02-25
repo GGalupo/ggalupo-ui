@@ -1,6 +1,13 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react'
-import { Box, Modal as ModalComponent } from '@ggalupo-ui/react'
-import { useState } from 'react'
+import type { Meta, StoryObj } from '@storybook/react'
+import {
+  Box,
+  Button,
+  Modal as ModalComponent,
+  ModalProps,
+  ModalTrigger,
+  ModalWrapper,
+  Text,
+} from '@ggalupo-ui/react'
 
 export default {
   title: 'Overlay/Modal/Modal',
@@ -19,29 +26,30 @@ export default {
       </Box>
     ),
   ],
+  args: {
+    children: (
+      <>
+        <ModalTrigger>
+          <Button>Open modal</Button>
+        </ModalTrigger>
+        <ModalWrapper>
+          <Text>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+            explicabo atque nesciunt similique nam sapiente recusandae quaerat
+            accusantium sit, ullam ex alias maxime quia consequuntur eveniet
+            perferendis. Odio, molestiae vel.
+          </Text>
+        </ModalWrapper>
+      </>
+    ),
+  },
   argTypes: {
-    open: {
-      type: 'boolean',
-      description: 'A boolean to control if the modal is open or close',
-    },
-    onOpenChange: {
-      type: 'function',
-      description:
-        'A function which toggles the modal state between closed and opened',
+    children: {
+      control: {
+        type: null,
+      },
     },
   },
-} as ComponentMeta<typeof ModalComponent>
+} as Meta<ModalProps>
 
-export const Modal: ComponentStory<typeof ModalComponent> = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const handleToggleModal = () => {
-    setIsOpen((prevState) => !prevState)
-  }
-
-  return (
-    <ModalComponent open={isOpen} onOpenChange={handleToggleModal}>
-      Teste
-    </ModalComponent>
-  )
-}
+export const Modal: StoryObj<ModalProps> = {}
