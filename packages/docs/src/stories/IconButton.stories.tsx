@@ -1,25 +1,28 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { IconButton, type IconButtonProps } from '@ggalupo-ui/react'
+import {
+  IconButton as IconButtonComponent,
+  type IconButtonProps,
+} from '@ggalupo-ui/react'
 import { Minus } from 'phosphor-react'
 
 export default {
   title: 'Form/IconButton',
-  component: IconButton,
+  component: IconButtonComponent,
   args: {
     children: <Minus />,
-    variant: 'primary',
+    variant: 'contained',
     size: 'md',
     disabled: false,
   },
   argTypes: {
     variant: {
-      options: ['primary', 'secondary', 'tertiary'],
+      options: ['contained', 'outlined', 'ghost'],
       control: {
         type: 'inline-radio',
       },
     },
     size: {
-      options: ['sm', 'md', 'lg'],
+      options: ['xs', 'sm', 'md', 'lg', 'xl'],
       control: {
         type: 'inline-radio',
       },
@@ -40,4 +43,4 @@ export default {
   },
 } as Meta<IconButtonProps>
 
-export const Primary: StoryObj<IconButtonProps> = {}
+export const IconButton: StoryObj<IconButtonProps> = {}

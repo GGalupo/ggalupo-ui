@@ -9,7 +9,7 @@ export const IconButton = styled('button', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  padding: '$4',
+  padding: '$3',
   cursor: 'pointer',
 
   '&:disabled': {
@@ -22,10 +22,8 @@ export const IconButton = styled('button', {
 
   variants: {
     variant: {
-      primary: {
-        svg: {
-          fill: '$white',
-        },
+      contained: {
+        color: '$white',
         background: '$grass500',
         '&:not(:disabled):hover': {
           backgroundColor: '$grass300',
@@ -36,17 +34,13 @@ export const IconButton = styled('button', {
         },
       },
 
-      secondary: {
-        svg: {
-          fill: '$grass500',
-        },
+      outlined: {
+        color: '$grass500',
         border: '2px solid $grass500',
 
         '&:not(:disabled):hover': {
           backgroundColor: '$grass500',
-          svg: {
-            fill: '$white',
-          },
+          color: '$white',
         },
 
         '&:disabled': {
@@ -55,26 +49,27 @@ export const IconButton = styled('button', {
         },
       },
 
-      tertiary: {
-        svg: {
-          fill: '$grass500',
-        },
+      ghost: {
+        color: '$grass500',
 
         '&:not(:disabled):hover': {
-          svg: {
-            fill: '$grass300',
-          },
+          color: '$grass300',
         },
 
         '&:disabled': {
-          svg: {
-            fill: '$gray600',
-          },
+          color: '$gray200',
         },
       },
     },
 
     size: {
+      xs: {
+        padding: '$2',
+        svg: {
+          width: '$3',
+          height: '$3',
+        },
+      },
       sm: {
         svg: {
           width: '$3',
@@ -91,15 +86,23 @@ export const IconButton = styled('button', {
 
       lg: {
         svg: {
-          width: '$6',
-          height: '$6',
+          width: '$5',
+          height: '$5',
+        },
+      },
+
+      xl: {
+        padding: '$4',
+        svg: {
+          width: '$7',
+          height: '$7',
         },
       },
     },
   },
 
   defaultVariants: {
-    variant: 'primary',
+    variant: 'contained',
     size: 'md',
   },
 })
