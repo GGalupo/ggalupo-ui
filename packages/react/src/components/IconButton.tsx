@@ -50,10 +50,10 @@ export const IconButton = styled('button', {
       },
 
       ghost: {
-        color: '$grass500',
+        color: '$white',
 
         '&:not(:disabled):hover': {
-          color: '$grass300',
+          color: '$grass500',
         },
 
         '&:disabled': {
