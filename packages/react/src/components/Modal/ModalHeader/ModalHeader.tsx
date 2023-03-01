@@ -6,7 +6,7 @@ import { IconButton } from '../..'
 
 import { Container, ModalTitle } from './styles'
 
-type ModalHeaderProps = {
+export type ModalHeaderProps = {
   children: ReactNode
 }
 

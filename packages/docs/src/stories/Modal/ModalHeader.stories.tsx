@@ -4,7 +4,7 @@ import {
   Button,
   Modal,
   ModalHeader as ModalHeaderComponent,
-  ModalProps,
+  ModalHeaderProps,
   ModalTrigger,
   ModalWrapper,
   Text,
@@ -50,6 +50,6 @@ export default {
       },
     },
   },
-} as Meta<ModalProps>
+} as Meta<ModalHeaderProps>
 
-export const ModalHeader: StoryObj<ModalProps> = {}
+export const ModalHeader: StoryObj<ModalHeaderProps> = {}
