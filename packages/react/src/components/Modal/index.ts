@@ -1,4 +1,5 @@
 export * from './Modal'
+export * from './ModalActions'
 export * from './ModalHeader'
 export * from './ModalTrigger'
 export * from './ModalWrapper'
