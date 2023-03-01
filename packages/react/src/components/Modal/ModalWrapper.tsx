@@ -11,7 +11,9 @@ export const ModalWrapper = ({ children }: ModalWrapperProps) => {
   return (
     <Dialog.Portal>
       <ModalOverlay />
-      <ModalContent>{children}</ModalContent>
+      <ModalContent onOpenAutoFocus={(e) => e.preventDefault()}>
+        {children}
+      </ModalContent>
     </Dialog.Portal>
   )
 }
