@@ -18,6 +18,17 @@ export default {
       </Box>
     ),
   ],
+  argTypes: {
+    onChange: {
+      action: 'Change',
+    },
+    onBlur: {
+      action: 'Blur',
+    },
+    onFocus: {
+      action: 'Focus',
+    },
+  },
 } as Meta<TextInputProps>
 
 export const Primary: StoryObj<TextInputProps> = {
