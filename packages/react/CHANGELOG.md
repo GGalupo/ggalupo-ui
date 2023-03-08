@@ -1,5 +1,11 @@
 # @ggalupo-ui/react
 
+## 1.3.0
+
+### Minor Changes
+
+- Add storybook actions to components
+
 ## 1.2.0
 
 ### Minor Changes
