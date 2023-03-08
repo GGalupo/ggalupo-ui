@@ -18,7 +18,7 @@ export const ModalActions = ({
     <Container>
       {closeButton && (
         <Dialog.Close asChild>
-          <Button variant="tertiary">Cancelar</Button>
+          <Button variant="tertiary">Cancel</Button>
         </Dialog.Close>
       )}
       {children}
