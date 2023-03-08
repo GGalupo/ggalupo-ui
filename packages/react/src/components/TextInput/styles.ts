@@ -35,6 +35,8 @@ export const TextInputContainer = styled('div', {
 })
 
 export const Prefix = styled('span', {
+  display: 'inline-block',
+  marginRight: '$1',
   fontFamily: '$default',
   fontSize: '$sm',
   color: '$gray400',
