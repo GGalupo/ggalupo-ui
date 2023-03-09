@@ -20,8 +20,20 @@ export default {
           justifyContent: 'center',
           alignItems: 'center',
           height: '80vh',
+          position: 'relative',
         }}
       >
+        <div
+          style={{
+            background: 'green',
+            position: 'absolute',
+            top: 15,
+            left: 15,
+            padding: '0.5rem',
+          }}
+        >
+          <Text>Open the modal to see overlay opacity</Text>
+        </div>
         {Story()}
       </Box>
     ),
