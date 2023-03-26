@@ -9,5 +9,9 @@ type AlertTitleProps = {
 }
 
 export const AlertTitle = ({ children, status }: AlertTitleProps) => {
-  return <AlertTitleContainer status={status}>{children}</AlertTitleContainer>
+  return (
+    <AlertTitleContainer as="h3" size="md" status={status}>
+      {children}
+    </AlertTitleContainer>
+  )
 }

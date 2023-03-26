@@ -13,7 +13,7 @@ export const AlertDescription = ({
   status,
 }: AlertDescriptionProps) => {
   return (
-    <AlertDescriptionContainer status={status}>
+    <AlertDescriptionContainer size="sm" status={status}>
       {children}
     </AlertDescriptionContainer>
   )
