@@ -11,6 +11,8 @@ export const colors = {
   gray800: '#202024',
   gray900: '#121214',
 
+  grass100: '#00ffb4',
+  grass200: '#00e6a2',
   grass300: '#00B37E',
   grass500: '#00875F',
   grass700: '#015F43',
