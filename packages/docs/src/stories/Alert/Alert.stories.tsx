@@ -6,7 +6,7 @@ import {
 } from '@ggalupo-ui/react'
 
 export default {
-  title: 'Status/Alert/Alert',
+  title: 'Status/Alert',
   component: AlertComponent,
   args: {
     status: 'info',
@@ -31,10 +31,10 @@ const Template: ComponentStory<typeof AlertComponent> = ({
   ...rest
 }) => <AlertComponent {...rest}>{children}</AlertComponent>
 
-export const Alert = Template.bind({})
-Alert.args = {
+export const Default = Template.bind({})
+Default.args = {
   children: (
-    <AlertDescription status={Alert.args?.status}>
+    <AlertDescription status={Default.args?.status}>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, minus
       suscipit dignissimos odit nisi hic nobis dolores obcaecati veniam eaque
       provident, sit ratione repellendus, tenetur saepe officiis doloremque!
@@ -48,7 +48,7 @@ WithTitle.args = {
   children: (
     <>
       <AlertTitle>Some cool title</AlertTitle>
-      <AlertDescription status={Alert.args?.status}>
+      <AlertDescription status={WithTitle.args?.status}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, minus
         suscipit dignissimos odit nisi hic nobis dolores obcaecati veniam eaque
         provident, sit ratione repellendus, tenetur saepe officiis doloremque!
